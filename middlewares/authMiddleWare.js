@@ -23,12 +23,5 @@ import userModel from '../models/user.js';
             res.status(401).send({"status":"Failed","message":"Unauthorized User No Token !!"})
 
         }
-        app.get('/protected-route', checkUserAuth, (req, res) => {
-            // Access user information via req.user
-            const user = req.user;
-            res.send(`Authenticated user: ${user.name}`);
-          });
-        
 }
-        
     export default checkUserAuth;

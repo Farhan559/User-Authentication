@@ -14,7 +14,7 @@ import checkUserAuth from '../middlewares/authMiddleWare.js';
 
 
     //Protected Routes  (which routes that is accessable after login).
-    router.post('/changePassword',UserController.chnageUserPassword)
+    router.post('/changePassword',UserController.changeUserPassword)
     
 
     // Define a route for sending emails
